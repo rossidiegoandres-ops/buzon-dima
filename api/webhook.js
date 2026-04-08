@@ -1,3 +1,7 @@
+app.post("/", async (req, res) => {
+
+  console.log("BODY COMPLETO:", req.body);
+
 const admin = require('firebase-admin');
 
 if (!admin.apps.length) {
